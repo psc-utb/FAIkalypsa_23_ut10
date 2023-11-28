@@ -280,13 +280,25 @@ public class PlayerMovementCCScript : MonoBehaviour
 	*/
     void Crouching()
     {
-        if (Input.GetKey(KeyCode.C))
+        /*if (Input.GetKey(KeyCode.C))
         {
             transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(1, 0.6f, 1), Time.deltaTime * 15);
         }
         else
         {
             transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(1, 1, 1), Time.deltaTime * 15);
+        }*/
+    }
+
+    public void Crouching(UnityEngine.InputSystem.InputAction.CallbackContext callbackContext)
+    {
+        if (callbackContext.action.IsPressed())
+        {
+            transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(1, 0.6f, 1), Time.deltaTime * 15);
+        }
+        else
+        {
+            transform.localScale = new Vector3(1, 1, 1);
         }
     }
 

@@ -1,0 +1,34 @@
+{
+    "name": "InputControlls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "b7845076-2506-4b8d-8b1a-70defe73a182",
+            "actions": [
+                {
+                    "name": "Crouch",
+                    "type": "Button",
+                    "id": "f2fd7cb9-036f-48c7-a1f1-ba2a0d824bbf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5ad4cf5e-fe5a-4a88-989b-b1f63332003d",
+                    "path": "<Keyboard>/#(C)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
