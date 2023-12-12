@@ -28,7 +28,7 @@ public class ZombieEyes : MonoBehaviour
             Vector3 position = this.transform.position;
             Vector3 direction = (Player.transform.position - position).normalized;
 
-            Debug.DrawRay(position, direction * coneCollider.Distance, Color.yellow);
+            Debug.DrawRay(position, direction * coneCollider.Distance, Color.blue);
             //Debug.DrawLine(position, position + direction * coneCollider.Distance, Color.red, Mathf.Infinity);
 
             Ray ray = new Ray(position, direction);
